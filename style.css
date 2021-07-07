@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #030303;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23f7f7f7' fill-opacity='0.18' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    font-family: 'American Typewriter', Didot, serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.959);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.dashed {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.transcript-container {
+    max-width: 90vw;
+    margin: 3rem 5vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 0 0.5rem;
+    animation: expand .2s ease-in-out;
+    padding: 0.5rem;
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background:#131313;
+}
+
+button {
+  color: rgba(240, 248, 255, 0.959);
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+  transition: all 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.button-start-and-pause {
+  background: none;
+}
+
+.button-reset {
+  background: none;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+}
+
