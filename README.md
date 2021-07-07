@@ -2,7 +2,5 @@ This speech to Morse code text program uses the Web Speech API speech recognitio
 
 The following resources were used:
 - Wes Bos JavaScript30 - Native Speech Recognition video
-
-Morse code converter function - www.tutorialspoint.com/converting-string-to-morse-code-in-javascript
-
-Add to DOM animation - https://codepen.io/ericwshea/pen/EyzZQg
+- Morse code converter function - www.tutorialspoint.com/converting-string-to-morse-code-in-javascript
+- Add to DOM animation - https://codepen.io/ericwshea/pen/EyzZQg
