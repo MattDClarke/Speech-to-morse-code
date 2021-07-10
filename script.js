@@ -56,7 +56,7 @@ function convertToMorse(str) {
     .toLowerCase()
     .split('')
     .map(el => (morseCode[el] ? morseCode[el] : el))
-    .join('');
+    .join('&nbsp;');
 }
 
 function start() {
